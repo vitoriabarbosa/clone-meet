@@ -6,11 +6,9 @@ body {
   padding: 0.4vw 1vw;
   background: red;
   color: white;
-  border-radius: 0.5vw;
+  border-radius: 0.2vw;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-around;
   margin: 0.5vw;
   border: none;
 }
@@ -24,7 +22,6 @@ body {
   padding-left: 0.5vw; 
   text-transform: uppercase;
   font-size: xx-small; /* equivale a fonte pequena = 9px */
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 #participantes-chamada {
@@ -35,7 +32,7 @@ body {
   flex-direction: row; 
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
+  align-items: start;
 }
 
 .participantes {
@@ -49,7 +46,7 @@ body {
 }
 
 .participante-falando {
-  border: 0.3vw solid rgb(46, 79, 189);
+  border: 0.2vw solid rgb(46, 79, 189);
   width: 21vw;
   border-radius: 1vw;
   background: #585858;
@@ -215,16 +212,17 @@ input {
   background: rgba(128, 128, 128, 0);
   padding: 0.8vw 0.8vw;
   width: 23vw;
+  outline: none;
 }
 
 #rodape {
   color: white;
   width: 100%;
-  margin-top: 0.8vw;
+  margin-top: 1vw;
 }
 
 #rodape p {
-  font-size: 1.8vw;
+  font-size: 2vw;
 }
 
 #rodape ul {
@@ -247,32 +245,40 @@ input {
 .rodape-principal {
   direction: row;
   display: flex;
-  width: 32vw;
+  width: 27vw;
   justify-content: space-between;
 }
 
-.botao-cinza svg {
-  width: 2vw;
-  height: 1.7vw;
+.botao-cinza {
+  height: 2vw;
+  width: 2.1vw;
   border-radius: 50%;
   background: rgb(107, 107, 107);
-  padding: 1vw;
+  padding: 0.8vw;
+  text-align: center;
 }
 
-.botao-camera svg {
+.botao-camera {
+  height: 2vw;
   width: 2.1vw;
-  height: 1.8vw;
   border-radius: 50%;
   background: red;
-  padding: 1vw;
+  padding: 0.8vw;
+  text-align: center;
 }
 
-.botao-chamada svg {
-  border-radius: 42%;
-  width: 4vw;
-  height: 1.8vw;
+.botao-chamada {
+  height: 2vw;
+  width: 3.5vw;
+  border-radius: 45%;
   background: red;
-  padding: 1vw 1vw;
+  padding: 0.8vw;
+  text-align: center;
+}
+
+.botao-cinza svg, .botao-camera svg, .botao-chamada svg {
+  width: 1.4vw;
+  height: 1.4vw;
 }
 
 .rodape-secundario {
