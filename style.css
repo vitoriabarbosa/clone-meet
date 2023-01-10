@@ -1,3 +1,7 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
   background: #212529;
 }
@@ -9,7 +13,7 @@ body {
   border-radius: 0.2vw;
   display: flex;
   align-items: center;
-  margin: 0.5vw;
+  margin: 1vw;
   border: none;
 }
 
@@ -21,7 +25,7 @@ body {
 .gravando p {
   padding-left: 0.5vw; 
   text-transform: uppercase;
-  font-size: xx-small; /* equivale a fonte pequena = 9px */
+  font-size: small; /* equivale a fonte pequena = 10px */
 }
 
 #participantes-chamada {
@@ -109,14 +113,14 @@ body {
 }
 
 .participantes-informacao p {
-  margin-top: 0.2vw; 
-  font-size: 0.8vw;
+  margin-top: 0.8vw; 
+  font-size: 1vw;
   color: white;
 }
 
 #mensagem-chamada {
   position: absolute;
-  top: 0.8vw;
+  top: 1vw;
   left: 67vw;
   width: 31vw;
   background: white;
@@ -145,7 +149,7 @@ body {
 }
 
 .caixaPermissao {
-  width: 28vw;
+  width: 27vw;
   background: rgba(128, 128, 128, 0.151);
   border-radius: 0.5vw;
   margin: auto;
@@ -153,15 +157,15 @@ body {
 }
 
 .caixaPermissao p {
-  font-size: 0.8vw;
-  width: 25vw;
+  font-size: 1vw;
+  width: 24vw;
   display: inline-block;
 }
 
 .comentarios {
   font-size: 1.1vw;
-  padding: 1.2vw;
-  margin-top: 0.5vw; 
+  padding: 1vw;
+  margin: 0.5vw 0 0 1vw; 
 }
 
 .comentarios-nome {
@@ -180,7 +184,7 @@ body {
   padding: 0.3vw 0.8vw;
   width: 28vw;
   background: rgba(128, 128, 128, 0.151);
-  margin: 1vw;
+  margin: 4vw 0.8vw 1vw 0.8vw;
 }
 
 form {
@@ -223,6 +227,7 @@ input {
 
 #rodape p {
   font-size: 2vw;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
 #rodape ul {
@@ -239,7 +244,7 @@ input {
 .rodape-horario {
   direction: row;
   display: flex;
-  padding: 0 0.5vw;
+  padding: 0 2vw;
 }
 
 .rodape-principal {
@@ -251,20 +256,24 @@ input {
 
 .botao-cinza {
   height: 2vw;
-  width: 2.1vw;
+  width: 2vw;
   border-radius: 50%;
   background: rgb(107, 107, 107);
   padding: 0.8vw;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .botao-camera {
   height: 2vw;
-  width: 2.1vw;
+  width: 2vw;
   border-radius: 50%;
   background: red;
   padding: 0.8vw;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .botao-chamada {
@@ -273,25 +282,26 @@ input {
   border-radius: 45%;
   background: red;
   padding: 0.8vw;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .botao-cinza svg, .botao-camera svg, .botao-chamada svg {
-  width: 1.4vw;
-  height: 1.4vw;
+  width: 1.3vw;
+  height: 1.3vw;
 }
 
 .rodape-secundario {
   direction: row;
   display: flex;
   padding: 0 2vw;
-  justify-content: center;
 }
 
 .rodape-principal li {
-  padding: 0 0.2vw;
+  margin: 0 0.2vw;
 }
 
  .rodape-secundario li {
-  padding: 0 1vw;
+  margin: 0 1vw;
 }
