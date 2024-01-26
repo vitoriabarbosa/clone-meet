@@ -10,14 +10,13 @@
   <link rel="stylesheet" href="reset.css" type="text/css">
   <link rel="stylesheet" href="style.css" type="text/css" />
   <!-- Boxicons CSS -->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
   <!-- Google icons CSS -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
   <main>
-  
     <div class="recording">
       <button>
         <span class="recording-button">
@@ -110,8 +109,19 @@
         </div>
       </div>
     </section>
-  
-    <section class="message">
+    
+    <!-- Informations Content -->
+    <section class="box-content" id="content1">
+      teste1
+    </section>
+
+    <!-- Guest Content -->
+    <section class="box-content" id="content2">
+      teste2
+    </section>
+    
+    <!-- Messages Content -->
+    <section class="box-content" id="content3">
       <div class="message-in-call">
         <p>Mensagens na chamada</p>
         <i class="material-symbols-outlined">close</i>
@@ -145,6 +155,17 @@
         </form>
       </div>
     </section>
+
+    <!-- Activities Content -->
+    <section class="box-content" id="content4">
+      teste4
+    </section>
+
+    <!-- Security Content -->
+    <section class="box-content" id="content5">
+      teste5
+    </section>
+  
   </main>
 
 <footer>
@@ -180,23 +201,34 @@
   </div>
 
   <div class="secondary-footer">
-    <button>
-      <i class="material-symbols-outlined">info</i>
-    </button>
-    <button>
-      <i class="material-symbols-outlined">group</i>
-    </button>
-    <button onclick="showMessage('.message')">
+    <button onclick="toggleContent(1)">
       <div class="change-icon">
-        <i class="material-symbols-outlined normal">chat</i>
-        <i class="material-symbols-outlined active">chat_bubble</i>
+        <i class="material-symbols-outlined" id="icon1">info</i>
       </div>
     </button>
-    <button>
-      <i class="material-symbols-outlined">play_shapes</i>
+
+    <button onclick="toggleContent(2)">
+      <div class="change-icon">
+        <i class="material-symbols-outlined" id="icon2">group</i>
+      </div>
     </button>
-    <button>
-      <i class="material-symbols-outlined">lock_person</i>
+
+    <button onclick="toggleContent(3)">
+      <div class="change-icon">
+        <i class="material-symbols-outlined" id="icon3">chat</i>
+      </div>
+    </button>
+
+    <button onclick="toggleContent(4)">
+      <div class="change-icon">
+        <i class="material-symbols-outlined" id="icon4">play_shapes</i>
+      </div>
+    </button>
+
+    <button onclick="toggleContent(5)">
+      <div class="change-icon">
+        <i class="material-symbols-outlined" id="icon5">lock_person</i>
+      </div>
     </button>
   </div>
 </footer>

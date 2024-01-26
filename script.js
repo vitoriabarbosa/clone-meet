@@ -1,18 +1,20 @@
-// const changeIcons = document.querySelector('.change-icon')
+// Alternando Caixas de Conteúdo
+function toggleContent(contentId) {
 
-function showMessage(element) {
-    var display = document.querySelector(element).style.display;
+    // Exibe a caixa de conteúdo correspondente ao ícone clicado
+    var content = document.getElementById('content' + contentId);
 
-    if(display == 'none'){
-        document.querySelector(element).style.display = 'block';
+    // Verifica se o conteúdo está visível
+    var isVisible = content.style.display !== 'none';
 
-        // // Change Icons
-        // changeIcons.addEventListener('click', function(){
-        //     document.body.classList.toggle('switch');
-        // });
+    // Oculta todas as caixas de conteúdo    
+    var contents = document.querySelectorAll('.box-content');
+    contents.forEach(function(content) {
+        content.style.display = 'none';
+    });
 
-    } else {
-        document.querySelector(element).style.display = 'none';
+    // Exibe a caixa de conteúdo correspondente se não estiver visível, caso contrário, oculta
+    if (!isVisible) {
+        content.style.display = 'block';
     }
 }
-
