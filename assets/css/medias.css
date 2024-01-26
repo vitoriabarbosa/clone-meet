@@ -1,0 +1,123 @@
+@media screen and (min-width: 1024px) {
+
+    main {
+        align-items: center;
+    }
+
+    .recording {
+        left: 0;
+        margin: 0.5rem;
+    }
+
+    .recording button {
+        width: 8rem;
+        height: 1.8rem;
+        font-size: 0.75rem;
+    }
+
+    .recording button i {
+        font-size: 0.9rem;
+    }
+
+    .recording-button {
+        gap: 0.5rem;
+    }
+
+    #meet-container {
+        margin: 1.5rem 1rem 1rem 1rem;
+        gap: 0.5rem;
+        justify-content: center;
+    }
+
+    .audio {
+        margin: 0.5rem;
+    }
+
+    .audio i {
+        padding: 0.4rem;
+        font-size: 0.9rem
+    }
+
+    .profile .photo {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .profile p {
+        margin-top: 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .box-content {
+        margin: 1rem 0.8rem;
+        padding: 0 1rem;
+    }
+
+
+    .message-in-call {
+        margin: 1rem 0.5rem;
+    }
+
+    .message-in-call p {
+        font-size: 1rem;
+    }
+
+    .box-permition {
+        width: 90%;
+        margin: 1.5rem auto;
+        padding: 1rem;
+    }
+
+    .box-permition p {
+        font-size: 0.7rem;
+    }
+
+    .comment {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+        margin: 0.5rem 0;
+    }
+
+    .send-message {
+        font-size: 0.8rem;
+        padding: 0.25rem 0.5rem;
+        bottom: 1rem;
+        left: 1.5rem;
+    }
+
+    input {
+        font-size: 0.8rem;
+        background: rgba(128, 128, 128, 0);
+        padding: 1rem;
+    }
+
+    footer {
+        bottom: 0.8rem;
+    }
+
+    footer p {
+        font-size: 1.1rem;
+    }
+
+    .main-footer {
+        gap: 0 0.5rem;
+    }
+
+    .secondary-footer {
+        gap: 0 0.5rem;
+    }
+
+    footer button {
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 0.5rem;
+    }
+
+    footer button .material-symbols-outlined {
+        font-size: 1.1rem;
+    }
+
+    .button.end {
+        width: 3.5rem;
+    }
+}
